@@ -1,10 +1,9 @@
 ### AnyKernel3 Ramdisk Mod Script
-## osm0sis @ xda-developers
 
 ### AnyKernel setup
 # begin properties
 properties() { '
-kernel.string= Automatic build kernel by JackAltman--Github@JackA1ltman
+kernel.string=Tropsi-X-Kernel by TropsPk
 do.devicecheck=0
 do.modules=0
 do.systemless=0
