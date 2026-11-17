@@ -27,6 +27,7 @@ ui_print() {
 ui_printfile() {
   local line losrpad;
   $BOOTMODE || [ -e /twres ] || losrpad='| '; # work around LOS Recovery eating leading whitespace
+  $BOOTMODE && losrpad=$(printf '\342\200\213'); # work around flasher apps trimming leading whitespace (invisible zero-width space)
   while IFS='' read -r line || [[ -n "$line" ]]; do
     ui_print "$losrpad$line";
   done < $1;
